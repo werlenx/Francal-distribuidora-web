@@ -1,0 +1,341 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, var(--primary-color), #1d4ed8);
+  color: white;
+  padding: 5rem 0;
+}
+
+.heroContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .heroContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContent {
+    padding: 0 2rem;
+  }
+}
+
+.heroTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Categorias Section */
+.categorias {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.categoriasContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .categoriasContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoriasContent {
+    padding: 0 2rem;
+  }
+}
+
+.categoriasTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.categoriasGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .categoriasGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoriaCard {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-gray);
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.categoriaCard:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.categoriaIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #dbeafe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.categoriaIcon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-color);
+}
+
+.categoriaTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.categoriaDescription {
+  color: var(--text-light);
+}
+
+/* Marcas Section */
+.marcas {
+  padding: 4rem 0;
+  background-color: var(--background-gray);
+}
+
+.marcasContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .marcasContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .marcasContent {
+    padding: 0 2rem;
+  }
+}
+
+.marcasTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.marcasSubtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marcasGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .marcasGrid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.marcaCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.marcaCard:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.marcaName {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+/* Diferenciais Section */
+.diferenciais {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.diferenciaisContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .diferenciaisContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diferenciaisContent {
+    padding: 0 2rem;
+  }
+}
+
+.diferenciaisTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3rem;
+}
+
+.diferenciaisGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .diferenciaisGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .diferenciaisGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.diferencialCard {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.diferencialIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #dbeafe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.diferencialIcon svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--primary-color);
+}
+
+.diferencialTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.diferencialDescription {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* CTA Section */
+.cta {
+  padding: 4rem 0;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.ctaContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .ctaContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ctaContent {
+    padding: 0 2rem;
+  }
+}
+
+.ctaTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background-color: white;
+  color: var(--primary-color);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #f3f4f6;
+}

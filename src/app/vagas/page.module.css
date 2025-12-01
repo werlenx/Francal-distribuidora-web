@@ -1,0 +1,172 @@
+.hero {
+
+  background-image: url('/banner_rh.png'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  z-index: 0;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  z-index: 2; 
+  padding: 0 50px;
+  position: relative;
+  background-image: 
+    linear-gradient(
+      to right, 
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.7), 
+      rgba(255, 255, 255, 0)
+    );
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: bottom center;
+}
+
+
+/* Vagas container */
+.vagasContainer {
+  max-width: 1200px;
+  min-height: 80vh;
+  margin: 50px auto 50px; 
+  padding: 0 20px;
+}
+
+.tabButtons {
+  display: flex;
+  gap: 0; 
+  margin-bottom: 30px;
+  width: fit-content; 
+  border-radius: 5px;
+  overflow: hidden; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.tabActive {
+  border: none !important; 
+  font-weight: 600;
+}
+
+.tabInactive {
+  border: none !important;
+  font-weight: 500;
+}
+
+/* ======================================= */
+/* 3. LISTA DE VAGAS (.vagaItem) */
+/* ======================================= */
+.vagasGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.vagaItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
+  border-left: 5px solid transparent; 
+}
+
+.vagaCargo {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600; 
+  margin-bottom: 5px;
+  text-transform: uppercase; 
+}
+
+.vagaArea {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.vagaLocal {
+  color: #777; 
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.localIcon {
+  margin-right: 5px;
+  color: #dc3545;
+}
+
+.vagaActions {
+  display: flex;
+  gap: 10px;
+  min-width: 250px; 
+  justify-content: flex-end; 
+}
+
+/* Detail panel e master/detail layout */
+.masterDetailContainer {
+    display: grid;
+    grid-template-columns: 350px 1fr; 
+    gap: 20px;
+    min-height: 80vh;
+}
+
+.masterPanel {
+    overflow-y: auto;
+    /* Garante que o painel esquerdo fique visível em telas grandes */
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 80px); /* Altura do masterPanel com scroll interno */
+}
+
+
+.detailPanel {
+    background-color: #d1e3f7; 
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px 50px;
+}
+
+/* Placeholder quando nada está selecionado */
+.detailPlaceholder {
+    text-align: center;
+    padding-top: 50px;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 900px) {
+    .masterDetailContainer {
+
+        grid-template-columns: 1fr;
+    }
+    .masterPanel {
+        position: static;
+        height: auto;
+    }
+}

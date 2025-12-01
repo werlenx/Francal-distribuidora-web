@@ -1,0 +1,19 @@
+.partnersTrack {
+  display: flex;
+  gap: 50px;
+  will-change: transform;
+}
+
+.partnerLogo {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  object-fit: contain;
+  border-radius: 12px;
+  /* background: #fff; */
+  transition: transform 0.3s ease;
+}
+
+.partnerLogo:hover {
+  transform: scale(1.05);
+}

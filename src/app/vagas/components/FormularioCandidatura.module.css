@@ -1,0 +1,134 @@
+.formularioWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formularioCard {
+    width: 100%;
+}
+
+.formularioTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-transform: uppercase; 
+}
+
+.vagasForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formLabel {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.formInput, .formTextarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.anexarCurriculo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap; 
+}
+
+.tamanhoMaximo {
+    font-size: 0.8rem;
+    color: #999;
+    flex-basis: 100%;
+    margin-top: -10px;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+
+/* ... (Seções anteriores) ... */
+
+/* 💡 NOVO: Estilos para o Grid de Endereço */
+.enderecoGrid {
+    display: grid;
+    /* Colunas: 1. CEP/Logradouro 2. Bairro/Cidade/Estado */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+}
+
+/* Ajuste para o CEP ter o botão de lupa */
+.cepContainer {
+    /* O CEP e o botão de lupa ficam na mesma célula do grid,
+       mas o input e o botão precisam ser agrupados. */
+    display: flex;
+    flex-direction: column; 
+}
+
+.cepInputGroup {
+    display: flex;
+    gap: 5px;
+}
+
+.cepSearchButton {
+    /* Estilo do botão de lupa */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.cepSearchButton:hover:enabled {
+    background-color: #0056b3;
+}
+
+.cepSearchButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/*grid*/
+.logradouroContainer { grid-column: 1 / 3; }
+.bairroContainer { grid-column: 1 / 2; }
+.cidadeContainer { grid-column: 2 / 3; }
+.estadoContainer { grid-column: 1 / 3; }
+
+@media (max-width: 768px) {
+    .enderecoGrid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+    .logradouroContainer, .bairroContainer, .cidadeContainer, .estadoContainer {
+        grid-column: auto; /* Reseta o span para telas pequenas */
+    }
+}
+
+
+/* RESPONSIVIDADE BÁSICA */
+@media (max-width: 768px) {
+    .vagaItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .vagaActions {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,98 @@
+/* src/app/rh/vagas/nova/page.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+}
+
+.formCard {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input, .textarea, .select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Garante que padding e border não aumentem a largura total */
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.select {
+    appearance: none; /* Remove estilo padrão do navegador */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13%205.4L146.2%20202.7%2018.6%2074.8c-6-6-15.6-6-21.6%200-6%206-6%2015.6%200%2021.6l130.7%20130.7c6%206%2015.6%206%2021.6%200l130.7-130.7c6-6%206-15.6%200-21.6a17.6%2017.6%200%200%200-13-5.4z%22%2F%3E%3C%2Fsvg%3E'); /* Ícone de seta */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px; /* Espaço para o ícone */
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.success {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+    }
+}

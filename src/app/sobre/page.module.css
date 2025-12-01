@@ -1,0 +1,1127 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Delius&family=Fira+Code:wght@300..700&display=swap');
+.hero {
+  display: grid;
+  grid-template-columns: 34% 8% 8% 50%;
+  color: white;
+  padding: 2rem 0 0 0;
+  position: relative;
+  overflow: hidden;
+  height: 700px;
+}
+.hero::after{
+    content: 'asdasdasd';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #24063f; */
+    background: url('/banner_about_us.png');
+    /* filter: brightness(0.6); */
+    z-index: 0;
+}
+.gray{
+    background-color: #969696;
+    grid-column: 2 / span 1;
+    opacity: 0.7;
+    z-index: 1;
+}
+.red{
+    background-color: #e30613;
+    grid-column: 3 / span 1;
+    opacity: 0.7;
+    z-index: 1;
+}
+.heroContent {
+    font-family: "Coming Soon", cursive;
+    font-weight: 600;
+    background-color: #1e40af;
+    grid-column: 4 / span 1;
+    padding: 4rem;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-align: justify;
+    align-items: center;
+    align-content: center;
+    
+    z-index: 1;
+}
+
+/* --- Layout da Seção Cultura --- */
+
+.cultura {
+    padding: 80px 20px;
+    background-color: var(--background-light-gray, #f8f8f8); /* Fundo muito leve */
+    text-align: center; /* Centraliza o cabeçalho, mas não o conteúdo do card */
+}
+
+.culturaHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color, #222);
+    margin-bottom: 50px;
+    letter-spacing: -0.05em;
+}
+
+.culturaContent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.culturaGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  /* --- Estilo de Cada Card (Minimalista e Profissional) --- */
+  
+  .culturaCard {
+    background-color: #ffffff;
+    padding: 40px 30px; /* Padding generoso */
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra muito suave */
+    text-align: left; /* Conteúdo alinhado à esquerda para leitura fácil */
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+    cursor: default;
+  }
+  
+  .culturaCard:hover {
+    transform: translateY(-5px); /* Efeito de levitar sutil */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra de destaque no hover */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Estado de Visibilidade para a Animação */
+.visible {
+    opacity: 1;
+    transform: translateY(0) !important; 
+}
+
+/* --- Tipografia e Destaques --- */
+
+.culturaTitle {
+    font-size: 1.6rem; 
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: var(--red-accent, #e30613); /* Destaque o título com a cor da marca */
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    span{
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+}
+
+/* Linha de sublinhado sutil e moderno para o título */
+.culturaTitle::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--red-accent, #e30613);
+    border-radius: 3px;
+}
+
+.culturaDescription,
+.culturaValoresList {
+    font-size: 1rem; 
+    color: var(--text-dark, #444); 
+    line-height: 1.7; 
+}
+
+/* Estilos Específicos para a Lista de Valores */
+.culturaValoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.culturaValoresList li {
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: flex-start; 
+    font-weight: 400;
+}
+
+.listMarker {
+    margin-right: 12px; 
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: var(--red-accent, #e30613); /* Destaque o marcador com a cor da marca */
+    flex-shrink: 0; 
+    padding-top: 2px;
+}
+
+
+/* --- Responsividade --- */
+
+@media (max-width: 992px) { 
+    .culturaGrid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 25px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .culturaGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* --- NOVA SEÇÃO: NOSSA EQUIPE --- */
+
+.nossaEquipe {
+    padding: 100px 20px;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+.equipeHeader {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color, #222);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.equipeContent {
+    max-width: 1400px; 
+    margin: 0 auto;
+    display: grid;
+    /* Divide o espaço: 1 fração para o texto, 3 frações para as fotos */
+    grid-template-columns: 1fr 3fr; 
+    gap: 40px;
+    align-items: center; /* Alinha o texto verticalmente com as fotos */
+}
+
+/* --- Bloco de Texto --- */
+
+.equipeText {
+    padding-right: 20px; /* Espaçamento interno */
+    align-self: start; /* Fixa o texto no topo da área do grid */
+}
+
+.equipeTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--red-accent, #e30613); 
+    margin-bottom: 15px;
+}
+
+.equipeDescription {
+    font-size: 1rem;
+    color: var(--text-dark, #555);
+    line-height: 1.7;
+}
+
+/* --- Bloco de Fotos (Grid Interno) --- */
+
+.equipePhotosGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+}
+
+.memberPhotoWrapper {
+    width: 100%;
+    /* Mantém a proporção de altura igual à largura (quadrado) */
+    /* padding-top: 100%;  */
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.memberPhoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o container */
+    filter: grayscale(100%); /* Efeito preto e branco da imagem */
+    transition: filter 0.3s ease;
+}
+
+.memberPhoto:hover {
+    filter: grayscale(0%); /* Transição para cores no hover (opcional, mas moderno) */
+}
+
+/* --- Responsividade --- */
+
+@media (max-width: 1200px) {
+    /* Em telas um pouco menores, reduz o espaço do grid de fotos */
+    .equipeContent {
+        grid-template-columns: 1fr 2fr; 
+    }
+}
+
+@media (max-width: 900px) {
+    /* Transição para layout de uma coluna: Texto acima das fotos */
+    .equipeContent {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+    
+    .equipeText {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .equipeTitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipePhotosGrid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+}
+
+/* --- NOVA SEÇÃO: GERÊNCIA COMERCIAL --- */
+
+.gerenciaComercial {
+    padding: 100px 20px;
+    background-color: var(--background-light-gray, #f8f8f8); /* Fundo sutil */
+    max-width: 1400px; 
+    margin: 0 auto;
+}
+
+/* Container que engloba o cabeçalho e as fotos */
+.gerenciaPhotosGrid {
+    display: grid;
+    /* Grid de 6 colunas, mas o cabeçalho ocupará as 2 primeiras linhas/últimas colunas */
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+}
+
+/* --- Bloco de Texto (Cabeçalho da Gerência) --- */
+
+.gerenciaHeaderContainer {
+    /* Centraliza o container do cabeçalho */
+    max-width: 1400px;
+    margin: 0 auto;
+    /* Usa a mesma estrutura de 6 colunas, mas só para o cabeçalho */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 20px; /* Espaço entre o cabeçalho e as fotos */
+}
+
+.gerenciaText {
+    /* Faz o texto ocupar as duas últimas colunas do grid de 6 */
+    grid-column: 5 / span 2; 
+    text-align: right;
+    padding-bottom: 30px;
+}
+
+.gerenciaTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color, #222);
+    margin-bottom: 5px;
+}
+
+.gerenciaDescription {
+    font-size: 1rem;
+    color: var(--text-dark, #555);
+}
+
+/* --- Estilo dos Itens (Fotos e Dados) --- */
+
+.gerenciaItem {
+    text-align: center;
+    /* Animação de fade-in no scroll (opcional) */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Para usar a animação no Intersection Observer */
+/* .gerenciaItem.visible { opacity: 1; transform: translateY(0); } */
+
+.memberPhotoWrapper {
+    width: 100%;
+    /* Altura = Largura para fotos quadradas, como na imagem */
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Cantos arredondados */
+    margin-bottom: 15px;
+}
+
+.memberPhoto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+}
+
+.memberPhoto:hover {
+    filter: grayscale(0%); 
+}
+
+/* Detalhes de Texto */
+.memberName {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color, #222);
+    margin-bottom: 3px;
+}
+
+.memberLocation,
+.memberArea {
+    font-size: 0.9rem;
+    color: var(--text-dark, #555);
+    line-height: 1.3;
+}
+.memberArea {
+    font-style: italic;
+}
+
+
+/* --- Responsividade --- */
+
+@media (max-width: 1200px) {
+    /* Seis colunas podem ficar muito finas. Reduzimos para 5 colunas */
+    .gerenciaPhotosGrid {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+    .gerenciaText {
+        /* Ocupa as duas últimas colunas do novo grid de 5 */
+        grid-column: 4 / span 2; 
+    }
+}
+
+@media (max-width: 900px) {
+    /* Em tablets, reduzimos para 4 colunas */
+    .gerenciaPhotosGrid {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    /* O texto sai do grid superior e o grid de fotos recomeça */
+    .gerenciaHeaderContainer {
+        grid-template-columns: 1fr; /* Volta para layout de 1 coluna */
+        margin-bottom: 40px;
+    }
+    .gerenciaText {
+        grid-column: 1 / -1; /* Ocupa a largura total */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+@media (max-width: 600px) {
+    /* Em mobile, 3 colunas para manter o tamanho das fotos razoável */
+    .gerenciaPhotosGrid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px;
+    }
+}
+
+/* --- NOVA SEÇÃO: GERÊNCIA GERAL --- */
+
+.gerenciaGeral {
+    padding: 100px 20px;
+    background-color: #ffffff; /* Fundo branco ou cor de contraste */
+}
+
+.gerenciaGeralHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color, #222);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gerenciaGeralContent {
+    max-width: 1200px; /* Limite a largura para caberem 4 itens + margem */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.gerenciaGeralGrid {
+    display: grid;
+    /* Grid de 4 colunas simétricas */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    /* Centraliza os itens horizontalmente se o número não preencher a linha (ex: 2 na última linha) */
+    justify-content: center;
+}
+
+/* O estilo do item (foto e dados) será reaproveitado, mas com classes específicas para esta seção */
+
+.gerenciaGeralItem {
+    text-align: center;
+    /* Animação opcional: use um novo ref ou adicione ao observer existente */
+    /* opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; */
+}
+
+/* * Reutilizamos as classes visuais do bloco de Gerência Comercial, 
+ * mas adaptamos os nomes para esta seção. Você pode reutilizar:
+ * .memberPhotoWrapper, .memberPhoto, .memberName, .memberLocation, .memberArea
+ * se eles já existirem no seu CSS, para manter a consistência.
+ */
+ 
+/* Exemplo de reutilização: */
+/*
+.gerenciaGeralItem .memberPhotoWrapper { ... }
+.gerenciaGeralItem .memberName { ... }
+*/
+
+/* --- Responsividade --- */
+
+@media (max-width: 1024px) {
+    /* Em tablets grandes, reduzimos para 3 colunas */
+    .gerenciaGeralGrid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Em tablets menores, reduzimos para 2 colunas */
+    .gerenciaGeralGrid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    /* Em mobile, 1 coluna para legibilidade */
+    .gerenciaGeralGrid {
+        grid-template-columns: 1fr; 
+        gap: 30px;
+    }
+}
+
+/* --- NOVA SEÇÃO: EQUIPE OPERACIONAL --- */
+
+.operacionalDestaque {
+    padding: 100px 20px;
+    color: #ffffff; /* Cor de texto padrão clara */
+    position: relative;
+    overflow: hidden;
+    
+    /* 1. Imagem de Fundo (Substitua o URL) */
+    background-image: url('/images/background-armazem.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* 2. Sobreposição Escura/Azul (Obrigatória para o texto branco se destacar) */
+.operacionalDestaque::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cor de sobreposição azul escuro com transparência */
+    background-color: rgba(0, 50, 150, 0.75); 
+    z-index: 1;
+} 
+
+.operacionalContent {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative; /* Garante que o conteúdo fique acima do ::before */
+    z-index: 2;
+}
+
+/* Título Principal */
+.operacionalHeader {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+/* Layout em Grid (Dois Blocos de Texto) */
+.operacionalGrid {
+    display: grid;
+    /* Divide em duas colunas, a da estatística pode ser levemente menor */
+    grid-template-columns: 3fr 2fr; 
+    gap: 80px; /* Grande espaçamento horizontal */
+    align-items: start;
+}
+
+/* --- Bloco Esquerdo (Descrição) --- */
+
+.operacionalSubtitulo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--red-accent, #24063f); /* Destaque na cor da marca */
+    margin-bottom: 20px;
+}
+
+.operacionalTexto {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f0f0f0; /* Branco suave */
+}
+
+/* --- Bloco Direito (Estatística) --- */
+
+.operacionalEstatistica {
+    padding-top: 50px; /* Ajusta o alinhamento visual com o texto esquerdo */
+}
+
+.operacionalTextoDestaque {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.operacionalNumero {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--red-accent, #24063f);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* --- Responsividade --- */
+
+@media (max-width: 900px) {
+    .operacionalGrid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .operacionalDescricao,
+    .operacionalEstatistica {
+        padding-top: 0;
+    }
+    .operacionalHeader {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .operacionalNumero {
+        font-size: 2rem;
+    }
+    .operacionalTextoDestaque {
+        font-size: 1.3rem;
+    }
+}
+
+/* História Section */
+.historia {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.historia::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.historiaContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .historiaContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .historiaContent {
+    padding: 0 2rem;
+  }
+}
+
+.historiaGrid {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .historiaGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.historiaText h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.historiaText h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+  border-radius: 2px;
+}
+
+.historiaText p {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.historiaText p:last-child {
+  margin-bottom: 0;
+}
+
+.historiaStats {
+  background: linear-gradient(135deg, white 0%, #f8fafc 100%);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.historiaStats::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+}
+
+.historiaStatsNumber {
+  font-size: 4rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--primary-color), #1e40af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.historiaStatsText {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+/* Missão Section */
+.missao {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.missao::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/banner_francal.png') center/cover;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.missaoContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 640px) {
+  .missaoContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .missaoContent {
+    padding: 0 2rem;
+  }
+}
+
+.missaoTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.missaoQuote {
+  font-size: 1.5rem;
+  font-style: italic;
+  max-width: 56rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.95;
+  position: relative;
+  padding: 2rem;
+}
+
+.missaoQuote::before,
+.missaoQuote::after {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  font-family: serif;
+}
+
+.missaoQuote::before {
+  top: 0;
+  left: 0;
+}
+
+.missaoQuote::after {
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .missaoQuote {
+    font-size: 1.75rem;
+  }
+}
+
+/* Valores Section */
+.valores {
+  padding: 6rem 0;
+  background-color: white;
+}
+
+.valoresContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .valoresContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .valoresContent {
+    padding: 0 2rem;
+  }
+}
+
+.valoresTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.valoresTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+  border-radius: 2px;
+}
+
+.valoresGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .valoresGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.valorCard {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, white 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.valorCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.valorCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.valorCard:hover::before {
+  transform: scaleX(1);
+}
+
+.valorIcon {
+  width: 5rem;
+  height: 5rem;
+  background: linear-gradient(135deg, var(--primary-color), #1e40af);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+  transition: all 0.3s ease;
+}
+
+.valorCard:hover .valorIcon {
+  transform: scale(1.1);
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.4);
+}
+
+.valorIcon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: white;
+}
+
+.valorTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.valorDescription {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Diferenciais Section */
+.diferenciais {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.diferenciais::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.diferenciaisContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .diferenciaisContent {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .diferenciaisContent {
+    padding: 0 2rem;
+  }
+}
+
+.diferenciaisTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.diferenciaisTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+  border-radius: 2px;
+}
+
+.diferenciaisGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .diferenciaisGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .diferenciaisGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.diferencialCard {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.diferencialCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #1e40af);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.diferencialCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.diferencialCard:hover::before {
+  transform: scaleX(1);
+}
+
+.diferencialNumber {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--primary-color), #1e40af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.diferencialTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+
+.diferencialDescription {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Animações de entrada */
+.hero,
+.historia,
+.missao,
+.valores,
+.diferenciais {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero.visible,
+.historia.visible,
+.missao.visible,
+.valores.visible,
+.diferenciais.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .historia,
+  .missao,
+  .valores,
+  .diferenciais {
+    padding: 4rem 0;
+  }
+  
+  .historiaText h2,
+  .missaoTitle,
+  .valoresTitle,
+  .diferenciaisTitle {
+    font-size: 2rem;
+  }
+  
+  .valorCard,
+  .diferencialCard {
+    padding: 1.5rem 1rem;
+  }
+}
