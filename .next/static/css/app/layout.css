@@ -1,0 +1,546 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Geist","arguments":[{"variable":"--font-geist-sans","subsets":["latin"]}],"variableName":"geistSans"} ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/8d697b304b401681-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/ba015fad6dcf6784-s.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/4cf2300e9c8272f7-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: 'Geist Fallback';src: local("Arial");ascent-override: 95.94%;descent-override: 28.16%;line-gap-override: 0.00%;size-adjust: 104.76%
+}.__className_188709 {font-family: 'Geist', 'Geist Fallback';font-style: normal
+}.__variable_188709 {--font-geist-sans: 'Geist', 'Geist Fallback'
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[14].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"src/app/layout.tsx","import":"Geist_Mono","arguments":[{"variable":"--font-geist-mono","subsets":["latin"]}],"variableName":"geistMono"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/9610d9e46709d722-s.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/747892c23ea88013-s.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/_next/static/media/93f479601ee12b01-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: 'Geist Mono Fallback';src: local("Arial");ascent-override: 74.67%;descent-override: 21.92%;line-gap-override: 0.00%;size-adjust: 134.59%
+}.__className_9a8899 {font-family: 'Geist Mono', 'Geist Mono Fallback';font-style: normal
+}.__variable_9a8899 {--font-geist-mono: 'Geist Mono', 'Geist Mono Fallback'
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dancing+Script:wght@400..700&family=Lobster&family=Satisfy&display=swap');
+
+/* Reset e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2563eb;
+  --primary-dark: #1d4ed8;
+  --secondary-color: #475569;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --background: #ffffff;
+  --background-gray: #f8fafc;
+  --border-color: #e2e8f0;
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-styled: 'charm', cursive;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-dark);
+  background-color: var(--background);
+}
+
+/* Espaçamento vertical consistente entre seções */
+main > section {
+  margin-top: 3rem;
+}
+
+main > section:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  main > section {
+    margin-top: 2rem;
+  }
+}
+
+/* Utilitários globais */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+/* Grid responsivo */
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Espaçamentos */
+.py-4 { padding: 1rem 0; }
+.py-8 { padding: 2rem 0; }
+.py-12 { padding: 3rem 0; }
+.py-16 { padding: 4rem 0; }
+.py-20 { padding: 5rem 0; }
+
+.px-4 { padding: 0 1rem; }
+.px-6 { padding: 0 1.5rem; }
+.px-8 { padding: 0 2rem; }
+
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+
+/* Texto */
+.text-center { text-align: center; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-5xl { font-size: 3rem; }
+.text-6xl { font-size: 3.75rem; }
+
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+
+/* Cores */
+.text-white { color: white; }
+.text-gray-600 { color: var(--text-light); }
+.text-gray-700 { color: var(--secondary-color); }
+.text-gray-900 { color: var(--text-dark); }
+
+.bg-white { background-color: white; }
+.bg-gray-50 { background-color: var(--background-gray); }
+.bg-gray-800 { background-color: #1f2937; }
+.bg-blue-600 { background-color: var(--primary-color); }
+
+/* Sombras */
+.shadow { box-shadow: var(--shadow); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+
+/* Bordas */
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-full { border-radius: 9999px; }
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .text-4xl { font-size: 2rem; }
+  .text-5xl { font-size: 2.5rem; }
+  .text-6xl { font-size: 3rem; }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/Footer/index.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__4HfFf {
+  background-color: #111827; /* fundo escuro elegante */
+  color: #e5e7eb;
+  padding-top: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.Footer_footerContent__o0_QC {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .Footer_footerContent__o0_QC {
+    grid-template-columns: 1.2fr 1fr 0.8fr;
+    align-items: center;
+  }
+}
+
+/* Mapa */
+.Footer_mapIframe__crDIm {
+  width: 100%;
+  height: 220px;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Info */
+.Footer_infoSection__i6aJb {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .Footer_infoSection__i6aJb {
+    text-align: left;
+  }
+}
+
+.Footer_title__N6gsz {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #facc15;
+}
+
+.Footer_infoSection__i6aJb p {
+  margin: 0.3rem 0;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+/* Social */
+.Footer_socialSection__3n0U8 {
+  text-align: center;
+}
+
+.Footer_socialIcons__rQVzx {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Footer_socialIcons__rQVzx a {
+  color: #d1d5db;
+  font-size: 1.25rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.Footer_socialIcons__rQVzx a:hover {
+  color: #facc15;
+  transform: scale(1.15);
+}
+
+/* Rodapé final */
+.Footer_footerBottom__X2COs {
+  border-top: 1px solid #374151;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.Footer_footerBottom__X2COs a {
+  color: #facc15;
+  text-decoration: none;
+  margin-left: 0.25rem;
+}
+
+.Footer_footerBottom__X2COs a:hover {
+  text-decoration: underline;
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/Header/index.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__azN2I {
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.Header_headerContent__S7CN0 {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+}
+
+@media (min-width: 640px) {
+  .Header_headerContent__S7CN0 {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Header_headerContent__S7CN0 {
+    padding: 0 2rem;
+  }
+}
+
+.Header_headerInner__T3H9k {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.Header_logo__b_4M7 {
+  flex-shrink: 0;
+}
+
+.Header_logoLink__C9hVn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Header_logoImage__d4Pdc {
+  height: 3rem;
+  width: auto;
+}
+
+.Header_navigation__684DT {
+  display: none;
+  gap: 2rem;
+  height: 100%;
+  align-items: end;
+}
+
+@media (min-width: 768px) {
+  .Header_navigation__684DT {
+    display: flex;
+  }
+}
+
+.Header_navLink__wkFKz {
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+}
+
+.Header_navLink__wkFKz:hover {
+  color: var(--primary-dark);
+  box-shadow: inset 0 -4px 0 var(--primary-dark);
+}
+
+.Header_activeLink__r6nK1 {
+  color: var(--primary-color) !important; 
+  box-shadow: inset 0 -4px 0 var(--primary-color);
+}
+
+.Header_activeLink__r6nK1:hover {
+  box-shadow: inset 0 -4px 0 var(--primary-color);
+}
+
+.Header_mobileActiveLink__WlpZR {
+  color: var(--primary-color);
+  background-color: var(--light-gray);
+}
+
+
+.Header_mobileMenuButton__FUSPO {
+  display: block;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.Header_mobileMenuButton__FUSPO:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.Header_mobileMenuButtonScrolled__InYGH:hover {
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .Header_mobileMenuButton__FUSPO {
+    display: none;
+  }
+}
+
+.Header_mobileMenu__mG1sN {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .Header_mobileMenu__mG1sN {
+    display: none;
+  }
+}
+
+.Header_mobileMenuContent__TTHsG {
+  padding: 0.5rem 0.75rem 0.75rem;
+  background-color: white;
+  border-top: 1px solid var(--border-color);
+}
+
+.Header_mobileNavLink__Es14O {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: block;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.Header_mobileNavLink__Es14O:hover {
+  color: var(--primary-color);
+}
+

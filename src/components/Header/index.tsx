@@ -7,6 +7,12 @@ import { CiLogin, CiLogout } from "react-icons/ci";
 import Cookies from 'js-cookie'
 import { useRouter } from 'next/navigation'; 
 
+interface NavItem {
+  name: string;
+  href: string;
+  icon?: React.ReactNode; 
+}
+
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -49,7 +55,7 @@ export default function Header() {
   };
 
 
-  const loginLink = isLoggedIn ? 
+  const loginLink: NavItem = isLoggedIn ? 
     {
       name: 'Logout', 
       href: '/rh/login', // Redireciona para o login após a ação de logout
@@ -66,6 +72,7 @@ export default function Header() {
       title='Login'
       className={styles.loginIcon} /> 
     };
+    
 
     // AQUI: Usando o spread operator, retorna um array com o item OU um array vazio.
     const loginDashboard = isLoggedIn ?
@@ -76,7 +83,7 @@ export default function Header() {
 
 
   // CORREÇÃO: Usando o spread operator para incluir loginDashboard APENAS se não for vazio.
-  const navigation = [
+  const navigation: NavItem[] = [
     { name: 'Home', href: '/' },
     { name: 'Sobre Nós', href: '/sobre' },
     { name: 'Trabalhe Conosco', href: '/vagas' },
@@ -85,7 +92,7 @@ export default function Header() {
     loginLink,
   ]
   
-  const renderLinkContent = (item: any) => {
+  const renderLinkContent = (item: NavItem) => {
     return item.icon || item.name;
   }
 

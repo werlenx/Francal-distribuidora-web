@@ -1,0 +1,326 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/rh/dashboard/page.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.page_dashboardContainer__TsofE {
+    max-width: 1400px;
+    margin: 0px auto;
+    margin-bottom: 200px;
+    padding: 0 20px;
+    
+}
+
+.page_header__QBb06 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 120px;
+    border-bottom: 2px solid #eee;
+}
+.page_headerActions__MpUPU{
+    display: flex;
+    gap: 15px;
+    width: 30%;
+}
+
+.page_title__JXXt_ {
+    font-size: 2rem;
+    color: #333;
+}
+
+.page_loading__LMKS6, .page_error__8__D_, .page_noData__dWm2_ {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.page_error__8__D_ {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
+
+.page_vagasList__VKSAx {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.page_gridHeader__AVqQv {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1.5fr;
+    font-weight: 700;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.page_vagaItem__yzQi5 {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.page_vagaItem__yzQi5:hover {
+    background-color: #f9f9f9;
+}
+
+.page_vagaTitle__ADamc {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.page_actions__HRDqE {
+    display: flex;
+    gap: 10px;
+}
+
+.page_vagaStatusOpen__14eKk {
+    color: #28a745;
+    font-weight: 600;
+}
+.page_vagaStatusClosed__VMBk2 {
+    color: #dc3545;
+}
+
+/**filters*/
+
+.page_buttons__khEv_{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.page_filters__cZE_l {
+    display: flex;
+    background-color: rgb(43, 35, 35);
+
+}
+
+.page_filter__JPwxX {
+    background-color: transparent !important;
+    border: 1px solid #ccc;
+    color: #555 !important;
+    transition: all 0.2s ease;
+}
+
+.page_filterActive__WOzQz {
+    background-color: #007bff !important; 
+    border-color: #007bff !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* detalhes da vaga */
+
+.page_detailsPanel__7Eggg{
+    padding: 5vh;
+    h3{
+        margin-bottom: 20px;
+    }
+}
+
+.page_detailsDescription__rZk5c {
+    white-space: pre-wrap; 
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.page_detailsPanel__7Eggg {
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out, opacity 0.4s;
+    
+    background-color: #fcfcfc;
+    border-top: 1px solid #eee;
+    grid-column: 1 / -1; 
+    overflow: hidden;
+}
+
+
+.page_detailsClosed__VgSXW {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+}
+
+.page_detailsOpen__rn_rd {
+    max-height: 1000px; 
+    padding: 20px;
+    opacity: 1;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .page_gridHeader__AVqQv, .page_vagaItem__yzQi5 {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 15px;
+    }
+    .page_gridHeader__AVqQv span:nth-child(3), 
+    .page_gridHeader__AVqQv span:nth-child(4),
+    .page_vagaItem__yzQi5 span:nth-child(3),
+    .page_vagaItem__yzQi5 span:nth-child(4) {
+        display: none;
+    }
+    .page_actions__HRDqE {
+        grid-column: 1 / -1;
+        justify-content: flex-end;
+    }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/components/ButtonStyled/index.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+.ButtonStyled_buttonStyled__maIuN {
+  /* font-family: "var(-font-primary)"; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg, #333);
+  color: var(--color, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ButtonStyled_buttonStyled__maIuN:hover {
+  background: var(--hover-bg, #555);
+  color: var(--hover-color, #eee);
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[5].use[3]!./src/app/rh/dashboard/components/VagaEditModal.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+
+.VagaEditModal_modalBackdrop__ywj3K {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Garante que fique sobre todo o conteúdo */
+}
+
+/* 2. Conteúdo Principal do Modal */
+.VagaEditModal_modalContent__gkoLp {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh; /* Limita a altura em telas menores */
+    overflow-y: auto;
+}
+
+.VagaEditModal_modalTitle__VbYg6 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.VagaEditModal_modalForm__kZlRS {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 3. Estilos dos Inputs e Labels (Reutilizando conceitos da página 'nova') */
+.VagaEditModal_modalLabel__vnHiG {
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.VagaEditModal_modalInput__Odgb_, .VagaEditModal_modalTextarea__fMP_W {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.VagaEditModal_modalTextarea__fMP_W {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.VagaEditModal_modalError__aVTFR {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.VagaEditModal_modalActions__kDb69 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.VagaEditModal_detailsDescription__Llpxc {
+    /* 💡 ESSENCIAL: Preserva quebras de linha e wrap (envolvimento de texto) */
+    white-space: pre-wrap; 
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.VagaEditModal_modalBackdrop__ywj3K {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    transition: background-color 0.3s ease-out; 
+}
+
+.VagaEditModal_modalContent__gkoLp {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    opacity: 0;
+    transform: scale(0.95) translateY(10px); 
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.VagaEditModal_modalActive__7BAvo .VagaEditModal_modalBackdrop__ywj3K {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.VagaEditModal_modalActive__7BAvo .VagaEditModal_modalContent__gkoLp {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
