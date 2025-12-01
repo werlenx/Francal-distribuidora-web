@@ -92,7 +92,7 @@ export default function Header() {
     loginLink,
   ]
   
-  const renderLinkContent = (item: NavItem) => {
+  const renderLinkContent = (item: NavItem): string | React.ReactNode => {
     return item.icon || item.name;
   }
 
