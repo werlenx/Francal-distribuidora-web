@@ -20,8 +20,16 @@ export async function getVagas():Promise<Vaga[]>{
     try{
         const response = await axios.get<Vaga[]>(url, {timeout:5000});
         return response.data;
-    }catch(error: any){
-        console.error("erro ao buscar vagas", error?.message ?? error)
+    }catch(error){
+        let errorMessage = "error desconhecido ao buscar vagas"
+
+        if(error instanceof Error){
+            errorMessage = error.message
+        }else if (axios.isAxiosError(error)){
+            errorMessage = error.message
+        }
+
+        console.error("erro ao buscar vagas", errorMessage)
         throw new Error("Não foi possível carregar  as vagas.")
     }
 }
